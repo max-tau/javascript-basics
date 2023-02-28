@@ -15,11 +15,12 @@ function none(a, b) {
 };
 
 function one(a, b) {
-  // your code here
+  return a!==b
 };
 
 function truthiness(a) {
-  // your code here
+  if (a) {return true}
+  if (!a) {return false}
 };
 
 function isEqual(a, b) {
