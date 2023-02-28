@@ -15,62 +15,63 @@ function none(a, b) {
 }
 
 function one(a, b) {
-  return a!==b;
+  return a !== b;
 }
 
 function truthiness(a) {
-  if (a) {return true}
-  if (!a) {return false}
-};
-
-function isEqual(a, b) {
-  return a===b
-};
-
-function isGreaterThan(a, b) {
-  return a>b
-};
-
-function isLessThanOrEqualTo(a, b) {
-  return a <= b
-};
-
-function isOdd(a) {
-  if (a % 2 !== 0) {return true}
-  else {return false}
-};
-
-function isEven(a) {
-  if (a % 2 == 0) {return true}
-  else {return false}
-};
-
-function isSquare(a) {
-  return Number.isInteger(Math.sqrt(a))
-};
-
-function startsWith(char, string) {
-  if (char == string.charAt(0)) {return true}
-  else {return false}
-};
-
-function containsVowels(string) {
-  
-  const vowels = ['a', 'e', 'i', 'o', 'u'];
-
-  for (let i = 0; i < vowels.length; i +=1) {
-    const vowel = vowels[i]; 
-  if (string.toLowerCase().includes(vowel)) {
-    return true
+  if (a) {
+    return true;
+  }
+  if (!a) {
+    return false;
   }
 }
-return false
+
+function isEqual(a, b) {
+  return a === b;
+}
+
+function isGreaterThan(a, b) {
+  return a > b;
+}
+
+function isLessThanOrEqualTo(a, b) {
+  return a <= b;
+}
+
+function isOdd(a) {
+  if (a % 2 !== 0) {
+    return true;
+  }
+  return false;
+}
+
+function isEven(a) {
+  if (a % 2 === 0) {
+    return true;
+  }
+  return false;
+}
+
+function isSquare(a) {
+  return Number.isInteger(Math.sqrt(a));
+}
+
+function startsWith(char, string) {
+  if (char === string.charAt(0)) {
+    return true;
+  }
+  return false;
+}
+
+function containsVowels(string) {
+  return (/[aeiou]/gi.test(string))
 }
 
 function isLowerCase(string) {
   if (string == string.toLowerCase()) {return true}
   else {return false}
-};
+}
 
 module.exports = {
   negate,
