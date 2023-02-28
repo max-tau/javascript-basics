@@ -11,15 +11,15 @@ function lowercase (string) {
 };
 
 function countCharacters (string) {
-  // your code here
+  return string.length
 };
 
 function firstCharacter (string) {
-  // your code here
+  return string.charAt(0)
 };
 
 function firstCharacters (string, n) {
-  // your code here
+  return string.slice(0, (0+n))
 };
 
 module.exports = {
