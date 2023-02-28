@@ -1,22 +1,22 @@
 function negate(a) {
-  return !a
-};
+  return !a;
+}
 
 function both(a, b) {
-  return a && b
-};
+  return a && b;
+}
 
 function either(a, b) {
-  return a || b
-};
+  return a || b;
+}
 
 function none(a, b) {
-  return !(a || b)
-};
+  return !(a || b);
+}
 
 function one(a, b) {
-  return a!==b
-};
+  return a!==b;
+}
 
 function truthiness(a) {
   if (a) {return true}
@@ -50,15 +50,26 @@ function isSquare(a) {
 };
 
 function startsWith(char, string) {
-  // your code here
+  if (char == string.charAt(0)) {return true}
+  else {return false}
 };
 
 function containsVowels(string) {
-  // your code here
-};
+  
+  const vowels = ['a', 'e', 'i', 'o', 'u'];
+
+  for (let i = 0; i < vowels.length; i +=1) {
+    const vowel = vowels[i]; 
+  if (string.toLowerCase().includes(vowel)) {
+    return true
+  }
+}
+return false
+}
 
 function isLowerCase(string) {
-  // your code here
+  if (string == string.toLowerCase()) {return true}
+  else {return false}
 };
 
 module.exports = {
