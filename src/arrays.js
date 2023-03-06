@@ -27,28 +27,43 @@ const removeNthElement = (index, array) => {
 };
 
 const numbersToStrings = numbers => {
-const stringOfNumbers = numbers.toString();
-  return stringOfNumbers.split(',');
+  const numberString = numbers.map(number => {
+    return number.toString();
+  });
+  return numberString;
 };
 
 const uppercaseWordsInArray = strings => {
-  // your code here
+  const uppercaseWords = strings.map(word => {
+    return word.toUpperCase();
+  });
+  return uppercaseWords;
 };
 
 const reverseWordsInArray = strings => {
-  // your code here
 };
 
 const onlyEven = numbers => {
-  // your code here
+  const evenNumbers = numbers.filter(number => {
+    return number % 2 === 0;
+  });
+  return evenNumbers;
 };
 
 const removeNthElement2 = (index, array) => {
-  // your code here
+  array.toString();
+
 };
 
 const elementsStartingWithAVowel = strings => {
-  // your code here
+  const firstLetter = strings.filter(string =>
+      string.toLowerCase().startsWith('a') ||
+      string.toLowerCase().startsWith('e') ||
+      string.toLowerCase().startsWith('i') ||
+      string.toLowerCase().startsWith('o') ||
+      string.toLowerCase().startsWith('u')
+  );
+  return firstLetter;
 };
 
 const removeSpaces = string => {
