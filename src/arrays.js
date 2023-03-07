@@ -58,7 +58,10 @@ const onlyEven = numbers => {
 };
 
 const removeNthElement2 = (index, array) => {
-  return array.slice((index - 1), (index + 1));
+  const firstHalf = array.slice(0, index);
+  const secondHalf = array.slice(index + 1);
+  const newArray = firstHalf.concat(secondHalf);
+  return newArray;
 };
 
 const elementsStartingWithAVowel = strings => {
