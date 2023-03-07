@@ -11,19 +11,21 @@ const getName = object => {
 };
 
 const getProperty = (property, object) => {
-  // your code here
+  return object[property];
 };
 
 const hasProperty = (property, object) => {
-  // your code here
+  return object.hasOwnProperty(property);
 };
 
 const isOver65 = person => {
-  // your code here
+  return person.age > 65;
 };
 
 const getAges = people => {
-  // your code here
+  return people.map(personAge => {
+    return personAge.age;
+  });
 };
 
 const findByName = (name, people) => {
