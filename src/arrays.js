@@ -84,7 +84,20 @@ const sumNumbers = numbers => {
 };
 
 const sortByLastLetter = strings => {
-  // your code here
+  const stringsToArrays2 = strings.map(element => {
+    return Array.from(element)
+      .reverse()
+      .join('');
+  });
+  const arraysSorted = stringsToArrays2.sort();
+  const finalArray = arraysSorted.map(sortedArr => {
+    return sortedArr
+      .split('')
+      .reverse()
+      .toString()
+      .replaceAll(',', '');
+  });
+  return finalArray;
 };
 
 module.exports = {
