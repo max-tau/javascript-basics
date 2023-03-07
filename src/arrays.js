@@ -41,6 +41,13 @@ const uppercaseWordsInArray = strings => {
 };
 
 const reverseWordsInArray = strings => {
+  const stringsToArrays = strings.map(element => {
+    return element.split('').reverse();
+  });
+  const backToStrings = stringsToArrays.map(arrayElement => {
+    return arrayElement.toString().replaceAll(',', '');
+  });
+  return backToStrings;
 };
 
 const onlyEven = numbers => {
@@ -51,8 +58,7 @@ const onlyEven = numbers => {
 };
 
 const removeNthElement2 = (index, array) => {
-  array.toString();
-
+  return array.slice((index - 1), (index + 1));
 };
 
 const elementsStartingWithAVowel = strings => {
@@ -67,11 +73,14 @@ const elementsStartingWithAVowel = strings => {
 };
 
 const removeSpaces = string => {
-  // your code here
+  return string.replaceAll(' ', '');
 };
 
 const sumNumbers = numbers => {
-  // your code here
+  const sum = numbers.reduce((acc, number) => {
+    return acc + number;
+  });
+  return sum;
 };
 
 const sortByLastLetter = strings => {
