@@ -14,7 +14,7 @@ const {
   startsWith,
   containsVowels,
   isLowerCase
-} = require('../booleans');
+} = require('../src/booleans');
 
 describe('negate', () => {
   it('returns the opposite of the passed boolean value', () => {

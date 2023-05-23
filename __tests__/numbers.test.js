@@ -10,7 +10,7 @@ const {
   absolute,
   quotient,
   remainder
-} = require('../numbers');
+} = require('../src/numbers');
 
 describe('add', () => {
   it('adds the two numbers together', () => {

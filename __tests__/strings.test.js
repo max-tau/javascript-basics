@@ -5,7 +5,7 @@ const {
   countCharacters,
   firstCharacter,
   firstCharacters
-} = require('../strings');
+} = require('../src/strings');
 
 describe('sayHello', () => {
   it('returns "Hello world!" when passed "world"', () => {

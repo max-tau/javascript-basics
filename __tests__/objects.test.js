@@ -9,7 +9,7 @@ const {
   findHondas,
   averageAge,
   createTalkingPerson
-} = require('../objects');
+} = require('../src/objects');
 
 describe('createPerson', () => {
   it('creates an object with the given name and age properties', () => {

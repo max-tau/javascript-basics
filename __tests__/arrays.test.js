@@ -14,7 +14,7 @@ const {
   removeSpaces,
   sumNumbers,
   sortByLastLetter
-} = require('../arrays');
+} = require('../src/arrays');
 
 describe('getNthElement', () => {
   const array = ['cat', 'dog', 'elephant', 'fox'];
